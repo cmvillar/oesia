@@ -18,7 +18,7 @@ import org.junit.Test;
 
 public class ValidatorPwdSpec {
 	public boolean validate(String pwd){
-		return false;
+		return true;
 	}
 	
 	@Test

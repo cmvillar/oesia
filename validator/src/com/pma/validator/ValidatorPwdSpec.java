@@ -23,7 +23,12 @@ public class ValidatorPwdSpec {
 	
 	@Test
 	public void lengthBiggerEqualFour() {
-		Assert.assertEquals(true, validate(""));
+		assertEquals(true, validate("xxxx"));
+	}
+	
+	@Test
+	public void checkInvalidPwdLength(){
+		assertEquals(false, validate(""));
 	}
 
 }

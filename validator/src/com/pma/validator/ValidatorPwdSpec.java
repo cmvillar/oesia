@@ -18,7 +18,7 @@ import org.junit.Test;
 
 public class ValidatorPwdSpec {
 	public boolean validate(String pwd){
-		return true;
+		return pwd.length()>=4;
 	}
 	
 	@Test
